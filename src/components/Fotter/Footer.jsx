@@ -52,6 +52,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="copy">&copy; {new Date().getFullYear()} Itx-Dev</p>
+            <p className="copy">Developed by   <a href="https://itx-bilal.vercel.app/">Bilal</a></p>
     </footer>
   );
 };
