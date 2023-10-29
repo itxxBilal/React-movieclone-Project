@@ -1,6 +1,11 @@
 .posterImage{
-    height: 600px;
+    height: 550px;
 }
+/* @media screen and (max-width: 768px) {
+    .posterImage{
+        height: 400px;
+    }
+} */
 
 .posterImage > img {
     margin: auto;
@@ -23,6 +28,12 @@
     transition: opacity .3s;
 }   
 
+@media screen and (max-width: 768px) {
+    .posterImage__overlay {
+        padding: 3rem;
+        height: 60%;
+    }
+}
 .posterImage__overlay:hover {
     opacity: 1;
 }
@@ -51,3 +62,21 @@
     text-align: left;
     width: 50%;
 }
+@media (max-width: 768px) {
+    .posterImage__title {
+      font-size: 2.5rem;
+    }
+  
+    .posterImage__runtime {
+      font-size: 1.5rem; 
+    }
+  
+    .posterImage__rating {
+      margin-left: 0; 
+    }
+  
+    .posterImage__description {
+      font-size: 0.9rem; 
+      width: 100%; 
+    }
+  }

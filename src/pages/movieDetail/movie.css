@@ -143,3 +143,41 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .movie__backdrop {
+      height: 200px; /* Adjust the backdrop height for smaller screens */
+    }
+  
+    .movie__detail {
+      flex-direction: column; /* Change the direction of detail layout */
+      align-items: center;
+      bottom: 130px;
+    }
+  
+    .movie__poster {
+      width: 200px; /* Adjust the poster width for smaller screens */
+    }
+  
+    .movie__detailRight {
+      height: auto; /* Adjust the height for smaller screens */
+    }
+  
+    .movie__Button {
+        text-align: center;
+        display: block; /* Change the display to 'block' for mobile screens */
+        width: 40px; /* Expand the button to full width on mobile screens */
+        margin-top: 1rem; /* Add some space between buttons on mobile screens */
+        overflow: hidden;
+    }
+  
+    .movie__production {
+      width: 00%; /* Adjust production width for smaller screens */
+      align-items: center; /* Center align for smaller screens */
+    }
+  
+    .movie__productionComapany {
+      width: 150px; /* Adjust the production company width for smaller screens */
+      margin: 1rem; /* Reduce margin for smaller screens */
+    }
+  }

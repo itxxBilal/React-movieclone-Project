@@ -1,4 +1,8 @@
+  @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Reenie+Beanie&display=swap');
+
 .header {
+    font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Reenie Beanie', cursive;
     margin: 0 2.5rem;
     padding: .5rem 0;
     align-items: center;
@@ -32,3 +36,24 @@ a > span:hover {
     font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+    .header {
+        margin: 0 -2.5rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .headerLeft, .headerRight {
+        margin-top: 10px;
+    }
+
+    a > span {
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+
+    .user__avatar {
+        font-size: 1.2rem;
+    }
+}
